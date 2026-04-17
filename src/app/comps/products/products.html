@@ -1,0 +1,50 @@
+<h2>Product List</h2>
+
+<table class="product-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Brand</th>
+      <th>Price</th>
+      <th>Stock</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.id }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.category }}</td>
+      <td>{{ product.brand }}</td>
+      <td>{{ product.price }}</td>
+      <td>{{ product.stock }}</td>
+      <td>{{ product.status }}</td>
+      <td><button (click)="viewProduct(product)">View</button></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<div class="modal" *ngIf="selectedProduct" >
+    <div class="modal-content" >
+      <span class="close" (click)="closeModal()">&times;</span>
+   
+      
+    <h2>Product Details</h2>
+    <div class="product-details">
+      <p><b>ID:</b> {{ selectedProduct?.id }}</p>
+      <p><b>Name:</b> {{ selectedProduct?.name }}</p>
+      <p><b>Category:</b> {{ selectedProduct?.category }}</p>
+      <p><b>Price:</b> {{ selectedProduct?.price }}</p>
+      <p><b>Stock:</b> {{ selectedProduct?.stock }}</p>
+      <p><b>Status:</b> {{ selectedProduct?.status }}</p>
+      <p><b>Description:</b> {{ selectedProduct?.description }}</p>
+      <p><b>Brand:</b> {{ selectedProduct?.brand }}</p>
+      <p><b>Rating:</b> {{ selectedProduct?.rating }}</p>
+      <p><b>Made:</b> {{ selectedProduct?.made }}</p>
+    </div>
+  </div>
+</div>

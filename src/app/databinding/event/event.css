@@ -1,0 +1,152 @@
+/* 1. Page Background & Typography */
+:host {
+  display: block;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #333;
+}
+
+.home-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.home-subtitle {
+  text-align: center;
+  color: #5d6d7e;
+  margin-bottom: 40px;
+}
+
+/* 2. Unified Card Design */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  border: none;
+}
+
+.card h3 {
+  color: #34495e;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f0f3f6;
+  padding-bottom: 10px;
+}
+
+/* 3. Syntax & Technical Highlights */
+.syntax-box {
+  background: #f8fbff;
+  padding: 12px 20px;
+  border-left: 4px solid #4a90e2;
+  border-radius: 6px;
+  display: inline-block;
+  font-family: 'Consolas', 'Monaco', monospace;
+  color: #2c3e50;
+  margin: 15px 0;
+}
+
+code {
+  color: #e74c3c;
+  background: #fdf2f2;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* 4. Interactive Components */
+.mouse-tracker {
+  height: 150px;
+  background: #f1f4f9;
+  border: 2px dashed #4a90e2;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #4a90e2;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.mouse-tracker:hover {
+  background: #eaf1fb;
+  border-style: solid;
+}
+
+.dblclick-area, .rightclick-area {
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  color: #5d6d7e;
+}
+
+.dblclick-area:hover, .rightclick-area:hover {
+  background: #f8fbff;
+  border-color: #4a90e2;
+  color: #4a90e2;
+  transform: translateY(-2px);
+}
+
+/* 5. Activity Monitor (Event Log) */
+.event-log {
+  margin-top: 30px;
+  padding: 20px;
+  background: #1e272e;
+  color: #00d8d6;
+  border-radius: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.event-log strong {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #3d4852;
+}
+
+/* 6. Form Controls & Buttons */
+.form-control, .form-select {
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #dcdde1;
+}
+
+.form-control:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.btn {
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: transform 0.2s;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 30px 0;
+}
